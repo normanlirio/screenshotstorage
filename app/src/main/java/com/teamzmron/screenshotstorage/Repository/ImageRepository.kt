@@ -14,6 +14,6 @@ class ImageRepository {
 
 
     fun saveImageToRepo(imageInput: ImageInput) {
-        getDBInstance().imageDAO().saveImage()
+        getDBInstance().imageDAO().saveImage(imageInput)
     }
 }
